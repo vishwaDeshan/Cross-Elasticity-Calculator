@@ -1,0 +1,204 @@
+<!-- ***************************************************  HTML Part  ***************************************************** -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style1.css" />
+  <title>Elasticity of Demand Calculator</title>
+</head>
+
+<body>
+  <header>
+    <h1>Elasticity of Demand Calculator</h1>
+  </header>
+
+  <!-- Select the calculator -->
+  <div id="type">
+    <label for="Clas" class="clas"><b>Choose Calculator:</b> </label>
+
+    <select name="cals" id="cals">
+      <option value="Cross Elasticity of Demand">
+        Cross Elsaticity of Demand
+      </option>
+      <option value="Income Elasticity of Demand">
+        Income Elasticity of Demand
+      </option>
+    </select>
+    <button id="selcettype" class="selecttype" onclick="myFunction()">
+      Select
+    </button>
+  </div>
+
+  <!-- content for Cross elasticty -->
+  <div class="content1" id="content1">
+    <div class="first">
+      <table>
+        <tr>
+          <h3>1st Situation</h3>
+        </tr>
+        <tr>
+          <td>Price of Product A</td>
+          <td>
+            <input type="price" id="price1" min="1" placeholder="Rs." />
+          </td>
+        </tr>
+        <tr>
+          <td>Quantity of Product B</td>
+          <td><input type="number" id="qty1" min="1" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="second">
+      <table>
+        <tr>
+          <h3>2nd Situation</h3>
+        </tr>
+        <tr>
+          <td>Price of Product A</td>
+          <td>
+            <input type="price" id="price2" min="1" placeholder="Rs." />
+          </td>
+        </tr>
+        <tr>
+          <td>Quantity of Product B</td>
+          <td><input type="number" id="qty2" min="1" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <td><button id="button" type="click">Calculate</button></td>
+    </div>
+
+    <div class="cross">
+      <table>
+        <tr>
+          <h3>Cross Elasticity</h3>
+        </tr>
+        <tr>
+          <td>Elasticity</td>
+          <td class="result" id="r1"></td>
+        </tr>
+        <tr>
+          <td>Products are</td>
+          <td class="result" id="r2"></td>
+        </tr>
+      </table>
+    </div>
+    <!-- Description -->
+
+    <div class="decs">
+
+      <p class="desc" id="positive">
+        A <b>positive elasticity </b> is typical of <b>substitute goods</b> . When as the price of
+        product A rises,also demand for product B will be risen.
+
+      </p>
+
+      <p class="desc" id="negative">
+        A <b>negative elasticity</b> is typical of <b>complementary goods</b> . When the price of product A
+        rises, the demand for product B will be reduced .
+      </p>
+
+      <p class="desc" id="zero">
+        Elasticity is either equal to or very close to <b>zero</b>>. ,This shows that the two products are
+        <b>uncorrelated</b> . The price change of product A has no effect on the demand for product B..</p>
+
+    </div>
+
+
+  </div>
+
+  <!-- content for Income elasticty -->
+  <div class="content2" id="content2">
+    <div class="first">
+      <table>
+        <tr>
+          <h3>Income</h3>
+        </tr>
+        <tr>
+          <td>Income in Period 1</td>
+          <td>
+            <input type="price" id="price3" min="1" placeholder="Rs." />
+          </td>
+        </tr>
+        <tr>
+          <td>Income in Period 2</td>
+          <td>
+            <input type="price" id="price4" min="1" placeholder="Rs." />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="second">
+      <table>
+        <tr>
+          <h3>Demand</h3>
+        </tr>
+        <tr>
+          <td>Demand in Period 1</td>
+          <td><input type="number" id="qty3" min="1" placeholder="" /></td>
+        </tr>
+        <tr>
+          <td>Demand in Period 2</td>
+          <td><input type="number" id="qty4" min="1" placeholder="" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <td><button id="btn1" onclick="clclte()">Calculate</button></td>
+    </div>
+
+    <div class="cross">
+      <table>
+        <tr>
+          <h3>Result</h3>
+        </tr>
+        <tr>
+          <td>Income Elasticity on Demand</td>
+          <td class="result" id="r3"></td>
+        </tr>
+        <tr>
+          <td>Products is a</td>
+          <td class="result" id="r4"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Description -->
+
+    <div class="decs">
+
+      <p class="desc" id="positive">
+        A <b>positive</b> positive income elasticity of demand shows that the good is a <b>normal
+          good</b> : the quantity demanded at any given price rises as income rises.
+
+      </p>
+
+      <p class="desc" id="negative">
+        A <b>negative</b> income elasticity of demand shows that the good is <b>inferior good</b> : the
+        quantity demanded at any given price reduces as income rises.
+
+      </p>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- Copyrights -->
+  <div class="copy">
+    &copy; Elasticity of Demand Calculator 2022 by Vishwa Deshan
+
+    <script src="./myscript.js"></script>
+</body>
+
+</html>
